@@ -175,12 +175,6 @@ Gdy dwa branche modyfikują tę samą stronę wiki, git zgłasza konflikt. W tra
 
 Rozwiązanie konfliktu często nie polega na wybraniu jednej wersji. Polega na napisaniu trzeciej, która integruje oba punkty widzenia albo wprost dokumentuje rozbieżność:
 
-```markdown
-> **Uwaga:** Poniższe podejście stosuje Zespół A. Zespół B stosuje alternatywę -
-> patrz [[team-b/api-strategy]]. Decyzja o ujednoliceniu jest otwarta -
-> patrz [[decisions/api-strategy-alignment]].
-```
-
 Konflikt git staje się zaproszeniem do rozmowy, którą system wiedzy może udokumentować.
 
 ---
