@@ -2,7 +2,7 @@
 
 ## Wstęp - Problem i Kontekst
 
-Organizacje tonią w informacji, ale cierpią na niedobór wiedzy.
+Organizacje toną w informacji, ale cierpią na niedobór wiedzy.
 
 Każdego dnia pracownicy piszą e-maile, prowadzą spotkania, rozwiązują problemy, podejmują decyzje. Prawie nic z tego nie trafia do wspólnej pamięci organizacji. Wiedza żyje w głowach konkretnych ludzi, w wątkach Slacka, w zamkniętych dokumentach Google Drive, w notatkach na prywatnych laptopach. Gdy ktoś odchodzi, odchodzi razem z nim.
 
