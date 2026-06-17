@@ -1,4 +1,5 @@
 # Shared Second Brain. Żywa Baza Wiedzy dla Organizacji
+### Autor: Grzegorz Łukasik
 
 ## Wstęp - Problem i Kontekst
 
