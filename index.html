@@ -4,16 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shared 2nd Brain</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@500;600&amp;display=swap">
+  <link rel="preload" as="image" href="brain-920.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@500;600&amp;display=swap"></noscript>
+  <script src="https://cdn.tailwindcss.com" defer id="tailwind-cdn"></script>
   <style>
     :root {
       --bg: #000000;
       --fg: #ffffff;
     }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #000;
+      color: #fff;
+    }
     
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      user-select: none;
     }
     
     .title-font {
@@ -35,6 +49,12 @@
       display: inline-block;
       max-width: 100%;
       line-height: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .brain-stage.is-ready {
+      opacity: 1;
     }
 
     .brain-img {
@@ -45,6 +65,128 @@
       max-height: min(86vh, calc(100vh - 5rem));
       object-fit: contain;
       filter: contrast(1.08) brightness(1.02);
+    }
+
+    #brain-loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    #brain-loader.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    body.is-loading #page-header,
+    body.is-loading #full-text-bar,
+    body.is-loading #credit,
+    body.is-loading .brain-stage {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .brain-loader-ring {
+      width: 28px;
+      height: 28px;
+      border-radius: 9999px;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-top-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #page-header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 50;
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      #page-header {
+        padding: 2.5rem;
+      }
+    }
+
+    #page-header .title-font {
+      font-size: 17px;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    @media (min-width: 768px) {
+      #page-header .title-font {
+        font-size: 19px;
+      }
+    }
+
+    #main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      padding: 0 1rem;
+      position: relative;
+    }
+
+    #full-text-bar {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 40;
+    }
+
+    #show-full {
+      appearance: none;
+      margin: 0;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      color: rgba(255, 255, 255, 0.5);
+      font: inherit;
+      font-size: 10px;
+      letter-spacing: 2px;
+      padding: 6px 16px;
+      cursor: pointer;
+      transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    #show-full:hover {
+      color: rgba(255, 255, 255, 0.8);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    #show-full:active {
+      transform: scale(0.985);
+    }
+
+    #credit {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.25rem;
+      z-index: 30;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      color: rgba(255, 255, 255, 0.25);
+    }
+
+    #credit a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 0.2);
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    #credit a:hover {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration-color: rgba(255, 255, 255, 0.6);
     }
 
     .dot {
@@ -219,25 +361,62 @@
     .loader-ring {
       animation: spin-slow 0.9s linear infinite;
     }
+
+    @media (max-width: 767px) {
+      #card {
+        width: 100%;
+        max-width: none;
+        border-left: none;
+      }
+
+      #full-text-bar {
+        bottom: 3.75rem;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+
+      #credit {
+        left: 0;
+        right: 0;
+        bottom: 0.85rem;
+        padding: 0 1rem calc(env(safe-area-inset-bottom, 0px) + 0.25rem);
+        text-align: center;
+        white-space: normal;
+        line-height: 1.45;
+      }
+    }
   </style>
 </head>
-<body class="bg-black text-white overflow-hidden h-screen select-none">
+<body class="bg-black text-white overflow-hidden h-screen select-none is-loading">
   <!-- Top right title -->
-  <div class="absolute top-0 right-0 z-50 p-8 md:p-10">
+  <div id="page-header" class="absolute top-0 right-0 z-50 p-8 md:p-10">
     <div class="title-font text-[17px] md:text-[19px] tracking-[0.04em] text-white/90">
       Shared 2nd Brain
     </div>
   </div>
 
+  <div id="brain-loader" aria-hidden="true">
+    <div class="loader-ring brain-loader-ring"></div>
+  </div>
+
   <!-- Main content: centered brain + dots -->
-  <div class="flex items-center justify-center h-full w-full px-4 relative">
+  <div id="main-content" class="flex items-center justify-center h-full w-full px-4 relative">
     <div class="brain-container">
       <div class="brain-stage">
-        <img 
-          src="brain.png" 
-          alt="Mózg - Shared Second Brain" 
-          class="brain-img"
-        >
+        <picture>
+          <source
+            type="image/webp"
+            srcset="brain-920.webp 1x, brain.webp 2x"
+          >
+          <img
+            src="brain.png"
+            alt="Mózg - Shared Second Brain"
+            class="brain-img"
+            width="1538"
+            height="1302"
+            fetchpriority="high"
+            decoding="sync"
+          >
+        </picture>
         
         <!-- Overlay dots layer — sized to the rendered image, not the full container -->
         <div id="dots-layer" class="absolute inset-0">
@@ -268,7 +447,7 @@
 
   <!-- Right sliding card - 75% width for comfortable reading -->
   <div id="card" 
-       class="section-card fixed top-0 right-0 h-full w-[75vw] max-w-[860px] bg-black border-l elegant-border z-50 flex flex-col shadow-2xl">
+       class="section-card fixed top-0 right-0 h-full w-full md:w-[75vw] md:max-w-[860px] bg-black md:border-l elegant-border z-50 flex flex-col shadow-2xl">
     
     <!-- Card header -->
     <div class="flex items-center justify-between px-8 pt-8 pb-5 border-b elegant-border flex-shrink-0">
@@ -294,7 +473,7 @@
   </div>
 
   <!-- Subtle hint / full text access -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-40">
+  <div id="full-text-bar" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-40">
     <button id="show-full"
             class="text-[10px] tracking-[2px] px-4 py-1.5 rounded-full border border-white/10 text-white/50 hover:text-white/80 hover:border-white/25 transition-all active:scale-[0.985]">
       CAŁY TEKST
@@ -1106,8 +1285,57 @@ Ta sama informacja może pojawić się w wielu Second Brainach z różnymi niuan
       });
     }
 
+    function setupBrainImage() {
+      const img = document.querySelector('.brain-img');
+      const stage = document.querySelector('.brain-stage');
+      const loader = document.getElementById('brain-loader');
+      if (!img || !stage) return;
+
+      let imageReady = false;
+      let tailwindReady = false;
+
+      const reveal = () => {
+        if (!imageReady || !tailwindReady) return;
+        document.body.classList.remove('is-loading');
+        stage.classList.add('is-ready');
+        if (loader) loader.classList.add('is-hidden');
+      };
+
+      const markImageReady = () => {
+        imageReady = true;
+        reveal();
+      };
+
+      const markTailwindReady = () => {
+        requestAnimationFrame(() => {
+          tailwindReady = true;
+          reveal();
+        });
+      };
+
+      if (img.complete && img.naturalWidth > 0) {
+        markImageReady();
+      } else {
+        img.addEventListener('load', markImageReady, { once: true });
+        img.addEventListener('error', markImageReady, { once: true });
+      }
+
+      const tailwindScript = document.getElementById('tailwind-cdn');
+      if (!tailwindScript || window.tailwind) {
+        markTailwindReady();
+        return;
+      }
+
+      tailwindScript.addEventListener('load', markTailwindReady, { once: true });
+      tailwindScript.addEventListener('error', markTailwindReady, { once: true });
+      setTimeout(() => {
+        if (!tailwindReady) markTailwindReady();
+      }, 3000);
+    }
+
     function init() {
       initTailwind();
+      setupBrainImage();
       setupDots();
       setupCardClose();
       setupFullDocument();
@@ -1119,8 +1347,12 @@ Ta sama informacja może pojawić się w wielu Second Brainach z różnymi niuan
       console.log('%c[Shared 2nd Brain] Elegant single-screen page initialized.', 'color:#444');
     }
 
-    // Boot
-    window.onload = init;
+    // Boot as soon as DOM is ready — don't wait for fonts/CDN assets
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   </script>
 
   <!-- Bottom right credit -->
