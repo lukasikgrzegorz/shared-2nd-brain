@@ -1,17 +1,10 @@
-<<<<<<< Updated upstream
 # Shared Second Brain. Żywa Baza Wiedzy dla Organizacji
 ### Autor: Grzegorz Łukasik
 
 ## Wstęp - Problem i Kontekst
-=======
-# Shared Second Brain - Żywa Baza Wiedzy dla Organizacji
-
-## 1. Problem i Kontekst
->>>>>>> Stashed changes
 
 Organizacje toną w informacji, ale cierpią na niedobór wiedzy.
 
-<<<<<<< Updated upstream
 Każdego dnia pracownicy piszą e-maile, prowadzą spotkania, rozwiązują problemy, podejmują decyzje. Prawie nic z tego nie trafia do wspólnej pamięci organizacji. Wiedza żyje w głowach konkretnych ludzi, w wątkach Slacka, w zamkniętych dokumentach Google Drive, w notatkach na prywatnych laptopach. Gdy ktoś odchodzi, odchodzi razem z nim.
 
 Skala tego problemu jest dobrze udokumentowana:
@@ -23,19 +16,6 @@ Skala tego problemu jest dobrze udokumentowana:
 Tradycyjne odpowiedzi na ten problem - firmowe wiki, Confluence, SharePoint - rozwiązują go tylko częściowo. Dokumentacja szybko staje się nieaktualna. Nikt jej nie utrzymuje, bo nikt nie jest za nią odpowiedzialny. Pracownicy uczą się, że wewnętrznym dokumentom nie można ufać, i przestają je konsultować. Tak powstaje błędne koło, w którym dokumentacja degraduje się jeszcze szybciej.
 
 Ten dokument opisuje koncepcję **Shared Second Brain** - architektury, która rozbija ten problem na elementarne składowe i proponuje nowe podejście. Każdy zespół staje się autonomicznym, utrzymywanym przez AI węzłem wiedzy, połączonym z resztą organizacji przez protokół MCP.
-=======
-Każdego dnia pracownicy piszą e-maile, prowadzą spotkania, rozwiązują problemy, podejmują decyzje - i prawie nic z tego nie trafia do wspólnej pamięci organizacji. Wiedza żyje w głowach konkretnych ludzi, w wątkach Slacka, w zamkniętych dokumentach Google Drive, w notatkach na prywatnych laptopach. Gdy ktoś odchodzi, odchodzi razem z nim.
-
-Skala tego problemu jest dobrze udokumentowana:
-- Przeciętny pracownik przełącza się między aplikacjami **~1 200 razy dziennie**, tracąc ekwiwalent **5 tygodni pracy rocznie** wyłącznie na przeszukiwanie informacji ¹
-- **54% organizacji** korzysta z ponad 5 różnych platform do dzielenia się wiedzą - tworząc silosy, które spowalniają decyzje ²
-- Firmy, które ujednolicają fragmentaryczne systemy wiedzy, raportują **35% redukcję** czasu przeznaczanego na wyszukiwanie informacji ²
-- **40% wiedzy ukrytej** (tacit knowledge) znika w ciągu pierwszych 6 miesięcy po odejściu doświadczonego pracownika ³
-
-Tradycyjne odpowiedzi na ten problem - firmowe wiki, Confluence, SharePoint - rozwiązują go tylko częściowo. Dokumentacja szybko staje się nieaktualna. Nikt jej nie utrzymuje, bo nikt nie jest za nią odpowiedzialny. Pracownicy uczą się, że wewnętrznych dokumentów nie można ufać, i przestają je konsultować - tworząc błędne koło, w którym dokumentacja degraduje się jeszcze szybciej.
-
-Ten dokument opisuje koncepcję **Shared Second Brain** - architektury, która rozbija ten problem na elementarne składowe i proponuje nowe podejście: każdy zespół jako autonomiczny, utrzymywany przez AI węzeł wiedzy, połączony z resztą organizacji przez standardowy protokół.
->>>>>>> Stashed changes
 
 ---
 
@@ -47,32 +27,20 @@ Tiago Forte - twórca platformy Forte Labs - spopularyzował koncepcję *Second 
 
 > "Twój umysł służy do generowania pomysłów, nie do ich przechowywania."
 
-<<<<<<< Updated upstream
 Mózg jest słabym narzędziem do magazynowania informacji. Jest za to doskonały w łączeniu idei, dostrzeganiu wzorców i tworzeniu czegoś nowego. Second Brain to zewnętrzny, zaufany system cyfrowy, który odciąża pamięć, tak by zasoby poznawcze mogły służyć myśleniu, a nie zapamiętywaniu.
-=======
-Mózg jest słabym narzędziem do magazynowania informacji. Jest za to doskonały w łączeniu idei, dostrzeganiu wzorców i tworzeniu czegoś nowego. Second Brain to zewnętrzny, zaufany system cyfrowy, który odciąża pamięć - tak by zasoby poznawcze mogły służyć myśleniu, a nie zapamiętywaniu.
->>>>>>> Stashed changes
 
 ### Metoda CODE
 
 Forte opisuje cykl pracy z Second Brainem jako cztery etapy.
 
 **C - Capture (Zbieranie)**
-<<<<<<< Updated upstream
 Zapisuj selektywnie to, co *rezonuje* - pomysły, cytaty, wnioski, wyróżnienia z lektur. Nie chodzi o kompletność, ale o trafność. Forte przestrzega przed "cyfrowym chomikowaniem" - zapisywaniem wszystkiego bez refleksji.
-=======
-Zapisuj selektywnie to, co *rezonuje* - pomysły, cytaty, wnioski, wyróżnienia z lektur. Nie chodzi o kompletność, ale o trafność. Forte przestrzega przed "cyfrowym chomikowanie" - zapisywaniem wszystkiego bez refleksji.
->>>>>>> Stashed changes
 
 **O - Organize (Organizowanie)**
 Kieruj zebrane materiały do systemu PARA (patrz niżej), organizując je według kryterium *przydatności*, nie tematu. Pytanie nie brzmi "czego to dotyczy?", lecz "kiedy i w jakim kontekście będę tego potrzebował?".
 
 **D - Distill (Destylowanie)**
-<<<<<<< Updated upstream
 Skracaj i wyostrzaj notatki w czasie techniką *Progressive Summarization* - podkreślasz kluczowe fragmenty, a potem pogrubiasz najważniejsze, opcjonalnie dodając skrót na początku. Cel jest prosty: notatka, którą Twoje przyszłe "ja" przeskanuje w kilkanaście sekund.
-=======
-Skracaj i wyostrzaj notatki w czasie - techniką *Progressive Summarization*: podkreślenia kluczowych fragmentów, a następnie pogrubienie najważniejszych, opcjonalnie skrót na początku. Cel: notatka, którą Twoje przyszłe "ja" przeskanuje w kilkanaście sekund.
->>>>>>> Stashed changes
 
 **E - Express (Wyrażanie)**
 System istnieje po to, żeby tworzyć: pisać, prezentować, decydować, prowadzić rozmowy. Bez fazy wyrażania Second Brain staje się eleganckim archiwum bez wartości.
@@ -88,7 +56,6 @@ PARA to uniwersalna struktura folderów, która działa w każdej aplikacji:
 | **Resources** | Tematy interesujące, potencjalnie przydatne | "Machine learning", "Architektura systemów" |
 | **Archives** | Nieaktywne elementy z pozostałych kategorii | Zakończone projekty |
 
-<<<<<<< Updated upstream
 Najważniejsza zasada: organizujesz według *przydatności*, nie *tematyki*. Dzięki temu zawsze wiesz, gdzie szukać tego, czego potrzebujesz do zadania, które właśnie realizujesz.
 
 ### Dlaczego to ważne dla organizacji
@@ -98,17 +65,6 @@ Second Brain Forte'a jest z założenia narzędziem **indywidualnym**. Ale defin
 ---
 
 ## 2. LLM Wiki - Andrej Karpathy i Nowa Architektura Wiedzy
-=======
-Kluczowa zasada: organizowanie według *przydatności*, nie *tematyki* - zawsze wiesz, gdzie szukać tego, czego potrzebujesz do zadania, które właśnie realizujesz.
-
-### Dlaczego to ważne dla organizacji
-
-Second Brain Forte'a jest z założenia narzędziem **indywidualnym**. Ale definiuje fundament: zewnętrzna, ustrukturyzowana, utrzymywana baza wiedzy, której można ufać. To punkt wyjścia - pytanie brzmi, co się dzieje, gdy taki system buduje cały zespół, a potem cała organizacja.
-
----
-
-## 3. LLM Wiki - Andrej Karpathy i Nowa Architektura Wiedzy
->>>>>>> Stashed changes
 
 ### Kontekst i geneza
 
@@ -122,29 +78,17 @@ Dlaczego? Bo skrystalizował coś, o czym wiele osób myślało, ale nikt nie na
 
 Karpathy stawia tezę, która przewartościowuje dominujący wzorzec pracy AI z wiedzą.
 
-<<<<<<< Updated upstream
 **RAG (Retrieval-Augmented Generation)**, czyli standardowe podejście, wygląda tak:
-=======
-**RAG (Retrieval-Augmented Generation)** - standardowe podejście - wygląda tak:
->>>>>>> Stashed changes
 1. Gromadzisz surowe dokumenty w bazie
 2. Przy każdym zapytaniu system wyszukuje odpowiednie fragmenty
 3. LLM syntezuje odpowiedź z tych fragmentów
 4. Następne zapytanie zaczyna od zera
 
-<<<<<<< Updated upstream
 Problem - system nigdy nie *rozumie* dokumentów, tylko je tymczasowo przywołuje. Każde zapytanie re-derywuje wiedzę od nowa. Wiedza się nie kumuluje.
-=======
-Problem: system nigdy nie *rozumie* dokumentów - tylko je tymczasowo przywołuje. Każde zapytanie re-derywuje wiedzę od nowa. Wiedza nie kumuluje się.
->>>>>>> Stashed changes
 
 **LLM Wiki** odwraca tę logikę:
 
-<<<<<<< Updated upstream
 > Zamiast re-czytać surowe dokumenty przy każdym zapytaniu, użyj LLM do *skompilowania* tych dokumentów w trwałą, ustrukturyzowaną, wzajemnie powiązaną wiki. Zapytania odpowiadaj z wikipedii, nie z surowego tekstu.
-=======
-> Zamiast re-czytać surowe dokumenty przy każdym zapytaniu - użyj LLM do *skompilowania* tych dokumentów w trwałą, ustrukturyzowaną, wzajemnie powiązaną wiki. Zapytania odpowiadaj z wikidpedii, nie z surowego tekstu.
->>>>>>> Stashed changes
 
 ### Architektura LLM Wiki
 
@@ -152,7 +96,6 @@ Karpathy opisuje system trzema warstwami.
 
 **Raw Sources** - surowe materiały: artykuły, papiery, notatki. Niezmienne, tylko do odczytu. LLM ich nie modyfikuje.
 
-<<<<<<< Updated upstream
 **The Wiki** - właściwa baza wiedzy: folder plików markdown pisanych i utrzymywanych przez LLM. Trwała i rosnąca z każdym ingestem.
 
 **Schema (CLAUDE.md / AGENTS.md)** - reguły, kategorie, format. Tu definiujesz, jak agent ma pisać wiki: jakie typy stron, jak linkować, jak flagować sprzeczności.
@@ -160,36 +103,16 @@ Karpathy opisuje system trzema warstwami.
 ### Trzy Operacje
 
 **Ingest** (źródło → aktualizacja wiki)
-=======
-**Raw Sources** - surowe materiały: artykuły, papiery, notatki. Immutable, read-only. LLM ich nie modyfikuje.
-
-**The Wiki** - właściwa baza wiedzy: folder plików markdown pisanych i utrzymywanych przez LLM. Persistent i compounding - rośnie z każdym ingestem.
-
-**Schema (CLAUDE.md / AGENTS.md)** - reguły, kategorie, format. To tutaj definiujesz jak agent ma pisać wiki: jakie typy stron, jak linkować, jak flagować sprzeczności.
-
-### Trzy Operacje
-
-**Ingest** (source → wiki updates)
->>>>>>> Stashed changes
 1. `read src` - przeczytaj nowe źródło
 2. `write summary` - zapisz podsumowanie
 3. `update idx` - zaktualizuj indeks
 4. `cross-link` - dodaj linki do powiązanych stron
 
-<<<<<<< Updated upstream
 **Query** (pytanie → zsyntetyzowana odpowiedź)
 1. `search idx` - przeszukaj indeks
 2. `synthesize` - zsyntezuj odpowiedź
 
 **Lint** (kontrola jakości i spójności)
-=======
-**Query** (question → synthesized answers)
-1. `search idx` - przeszukaj indeks
-2. `synthesize` - zsyntezuj odpowiedź
-3. `→ file back to wiki` - zapisz Q&A z powrotem do wiki (wiedza o zapytaniach jest też wiedzą!)
-
-**Lint** (health-check · consistency)
->>>>>>> Stashed changes
 1. `find issues` - wykryj problemy i sprzeczności
 2. `fix & patch` - napraw i załataj
 3. `suggest sources` - zaproponuj nowe źródła do ingestii
@@ -204,22 +127,12 @@ System ma jasny podział ról:
 | question (zadawanie pytań) | cross-ref |
 | think (myślenie strategiczne) | maintain |
 
-<<<<<<< Updated upstream
-=======
-> **"The Second Brain is built to empower the First Brain, not to replace it."**
-
-### Kluczowy cytat
-
-> *"Obsidian is the IDE, the LLM is the programmer, the wiki is the codebase."*
-> - Andrej Karpathy
->>>>>>> Stashed changes
 
 ### Właściwość kumulowania
 
 To, co wyróżnia LLM Wiki od RAG, to **compounding** - wiedza, która rośnie nie liniowo, ale wykładniczo:
 
 - Każdy dodany dokument integruje się z istniejącą strukturą wiedzy, a nie tylko dołącza do stosu
-<<<<<<< Updated upstream
 - Połączenia stają się bogatsze, sprzeczności są wykrywane, wiki staje się dokładniejsza i gęściej powiązana
 - Zapytanie w miesiącu szóstym korzysta z całej wiedzy zaingestowanej przez miesiące jeden do pięciu, w pełni zsyntezowanej
 
@@ -232,20 +145,6 @@ Odpowiedź na zapytanie to nie "wyciąganie fragmentów z dokumentów". To "czyt
 ### Git jako Infrastruktura Wiedzy
 
 Shared Second Brain żyje w repozytorium git. To nie przypadkowy wybór infrastruktury, to decyzja architektoniczna, która przynosi ze sobą cały ekosystem narzędzi wypracowanych przez inżynierów oprogramowania przez dekady: historię zmian, code review, branche, merge requesty, konflikty i ich rozwiązywanie.
-=======
-- Połączenia stają się bogatsze; sprzeczności są wykrywane; wiki staje się dokładniejsza i gęściej powiązana
-- Zapytanie w miesiącu szóstym korzysta z całej wiedzy zaingestowanej przez miesiące jeden do pięciu - w pełni zsyntezowanej
-
-Odpowiedź na zapytanie to nie "wyciąganie fragmentów z dokumentów" - to "czytanie pre-zsyntezowanego wpisu encyklopedycznego, który już integruje wszystko, czego system kiedykolwiek nauczył się na dany temat".
-
----
-
-## 4. Repozytorium jako Fundament Współpracy
-
-### Git jako Infrastruktura Wiedzy
-
-Shared Second Brain żyje w repozytorium git. To nie przypadkowy wybór infrastruktury - to decyzja architektoniczna, która przynosi ze sobą cały ekosystem narzędzi wypracowanych przez inżynierów oprogramowania przez dekady: historia zmian, code review, branche, merge requesty, konflikty i ich rozwiązywanie.
->>>>>>> Stashed changes
 
 Wiedza organizacji staje się zarządzana tak samo jak kod, z pełną historią, możliwością cofnięcia każdej zmiany, mechanizmem przeglądu i zatwierdzania.
 
@@ -253,63 +152,13 @@ Wiedza organizacji staje się zarządzana tak samo jak kod, z pełną historią,
 
 Kluczowa cecha praktyczna to to, że **agent AI może autonomicznie commitować zmiany do repozytorium**.
 
-<<<<<<< Updated upstream
 Operacje wiki, ingest nowego dokumentu, aktualizacja strony, cross-linking, naprawa niespójności, nie wymagają ręcznego udziału człowieka na etapie zapisu. Agent przeprowadza operację i tworzy commit z opisem wykonanej pracy.
-=======
-Oznacza to, że operacje wiki - ingest nowego dokumentu, aktualizacja strony, cross-linking, naprawa niespójności - nie wymagają ręcznego udziału człowieka na etapie zapisu. Agent przeprowadza operację i tworzy commit z opisem wykonanej pracy:
-
-```
-git commit -m "ingest: dodaj notatki ze spotkania Q3 planning
-
-Zaktualizowano: strategy/roadmap.md, team/decisions.md
-Cross-linked: projects/q3-initiatives.md
-Flagi: 2 sprzeczności z wcześniejszymi decyzjami - patrz conflicts.md"
-```
->>>>>>> Stashed changes
 
 Człowiek może przejrzeć historię commitów i zobaczyć dokładnie, co agent zrobił, kiedy i dlaczego. Git log staje się dziennikiem aktywności bazy wiedzy.
 
 ### Współpraca przez Branche
 
-<<<<<<< Updated upstream
 Gdy kilka osób lub kilka agentów pracuje równolegle nad wiki, git dostarcza naturalny mechanizm izolacji - branche.
-=======
-Gdy kilka osób lub kilka agentów pracuje równolegle nad wikią, git dostarcza naturalny mechanizm izolacji: **branche**.
-
-Typowe wzorce:
-
-**Branch per temat** - gdy pracujesz nad dużą ingestią (np. wyniki kwartalnego przeglądu), robisz to na osobnym branchu. Zmiany trafiają do `main` po przeglądzie:
-
-```
-main
-├── feature/q3-retrospective    ← agent ingestuje dokumenty z retrospektywny
-├── feature/new-hire-onboarding ← HR team buduje sekcję onboardingową
-└── fix/outdated-api-docs       ← ktoś poprawia przestarzałe informacje o API
-```
-
-**Branch per środowisko** - `main` to stabilna, zweryfikowana wiedza. Branch `draft` to wiedza w trakcie przeglądu, jeszcze niezatwierdzona przez człowieka.
-
-### Worktrees: Równoległa Praca bez Przełączania Kontekstu
-
-Git worktrees to mechanizm, który pozwala mieć **wiele branchy wypisanych jednocześnie w różnych folderach** - bez `git stash`, bez `git checkout`, bez utraty kontekstu.
-
-Praktyczne zastosowanie w Shared Second Brain:
-
-```bash
-# Główna baza wiedzy (main)
-/second-brain/                    ← agent: odpowiada na pytania z produkcji
-
-# Równoległa ingestia nowych materiałów
-/second-brain-ingest/             ← agent: przetwarza nowe dokumenty ze spotkań
-
-# Przegląd sugestii od innych zespołów
-/second-brain-suggestions/        ← człowiek: przegląda i zatwierdza propozycje
-```
-
-Wszystkie trzy są tym samym repozytorium - ale każdy worktree działa niezależnie. Agent ingestujący nie blokuje agenta odpowiadającego na pytania. Człowiek przeglądający sugestie nie zakłóca żadnego z nich.
-
-Worktrees są szczególnie wartościowe przy **równoległej pracy wieloagentowej**: każdy agent dostaje własny worktree, commituje do swojego brancha, a zmiany są łączone z `main` po ukończeniu i opcjonalnym przeglądzie.
->>>>>>> Stashed changes
 
 ### Pull Request jako Weryfikacja Wiedzy
 
@@ -317,32 +166,15 @@ Mechanizm pull requestów naturalnie mapuje się na proces weryfikacji wiedzy:
 
 1. Agent (lub człowiek) tworzy branch z propozycją zmian w wiki
 2. Otwiera Pull Request z opisem: co zostało dodane, zaktualizowane, jakie sprzeczności wykryto
-<<<<<<< Updated upstream
 3. Inne osoby z zespołu przeglądają diff i widzą dokładnie, które fragmenty wiki się zmieniają
 
 Każda zmiana jest recenzowalna i odwracalna. Wiedza nie jest wpisana w kamień. Można ją zaktualizować przy nowych informacjach, poprawić błąd agenta, odrzucić zmianę, która wprowadza nieścisłości.
-=======
-3. Inne osoby z zespołu przeglądają diff - widzą dokładnie, które fragmenty wikii się zmieniają
-4. Po zatwierdzeniu zmiany trafiają do `main`
-
-Każda zmiana jest recenzowalna i cofalna. Wiedza nie jest wpisana w kamień - można ją zaktualizować przy nowych informacjach, poprawić błąd agenta, odrzucić zmianę, która wprowadza nieścisłości.
->>>>>>> Stashed changes
 
 ### Konflikt to Sygnał, nie Problem
 
 Gdy dwa branche modyfikują tę samą stronę wiki, git zgłasza konflikt. W tradycyjnym kodzie to przeszkoda techniczna. W bazie wiedzy to **sygnał semantyczny** - dwa różne konteksty próbują opisać tę samą rzecz inaczej.
 
-<<<<<<< Updated upstream
 Rozwiązanie konfliktu często nie polega na wybraniu jednej wersji. Polega na napisaniu trzeciej, która integruje oba punkty widzenia albo wprost dokumentuje rozbieżność:
-=======
-Rozwiązanie konfliktu często nie polega na wybraniu jednej wersji - polega na napisaniu trzeciej, która integruje oba punkty widzenia albo explicite dokumentuje rozbieżność:
-
-```markdown
-> **Uwaga:** Poniższe podejście stosuje Zespół A. Zespół B stosuje alternatywę -
-> patrz [[team-b/api-strategy]]. Decyzja o ujednoliceniu jest otwarta -
-> patrz [[decisions/api-strategy-alignment]].
-```
->>>>>>> Stashed changes
 
 Konflikt git staje się zaproszeniem do rozmowy, którą system wiedzy może udokumentować.
 
@@ -358,7 +190,6 @@ Widzę to jako architekturę **Shared Second Brain**, opartą na prostej zasadzi
 
 > **Każdy zespół jest jednym Second Brainem.**
 
-<<<<<<< Updated upstream
 Każdy zespół utrzymuje własną, autonomiczną bazę wiedzy w formacie LLM Wiki, skupioną na domenach, projektach, decyzjach i kontekście specyficznym dla tego zespołu. Bazę utrzymuje AI, które automatycznie ingestuje materiały z codziennej pracy: dokumenty, spotkania, decyzje, kod.
 
 ### Protokół wymiany: MCP
@@ -378,94 +209,21 @@ Filtr prywatności działa na etapie tego, co trafia do indeksu i ma publiczny U
 `suggest` przez MCP to tylko wejście do systemu. Po stronie każdego węzła istnieje trwała **kolejka sugestii** - lekka baza danych (na przykład SQLite albo pliki JSON w dedykowanym folderze repozytorium), do której trafiają zgłoszenia.
 
 Sugestie od zewnętrznych agentów **nigdy nie trafiają bezpośrednio do wiki**. MCP je tylko przyjmuje. Przetworzenie należy wyłącznie do agenta właściciela węzła.
-=======
-Każdy zespół utrzymuje własną, autonomiczną bazę wiedzy w formacie LLM Wiki - skupioną na domenach, projektach, decyzjach i kontekście specyficznym dla tego zespołu. Baza jest utrzymywana przez AI, które automatycznie ingestuje materiały z codziennej pracy: dokumenty, spotkania, decyzje, kod.
-
-### Protokół wymiany: MCP
-
-Każdy Second Brain zespołu udostępnia na zewnątrz **serwer MCP** (Model Context Protocol - otwarty protokół opublikowany przez Anthropic w 2024 roku, dziś wspierany przez wszystkich głównych dostawców AI).
-
-Serwer MCP eksponuje dokładnie **dwa narzędzia** - i tylko dwa. MCP jest interfejsem zewnętrznym, nie silnikiem przetwarzania wiedzy:
-
-**`query`** - Zapytanie do bazy wiedzy zespołu. Agent AI (asystent innego pracownika, innego zespołu, lub automatyczny pipeline) zadaje pytanie w języku naturalnym. Serwer zwraca odpowiedź zsyntezowaną z wiedzy tego konkretnego Second Brainu.
-
-**`suggest`** - Zgłoszenie sugestii. To narzędzie jest wywoływane przez **dedykowanego agenta sugestii** - pełnoprawnego agenta AI działającego po stronie wysyłającej, analogicznego do tego, jak użytkownik pracuje z Claude Code na swoim komputerze. Agent ten ma dostęp do kontekstu swojego zespołu, rozumuje co jest wartościowe dla innego węzła, formułuje propozycję i wywołuje `suggest` przez MCP. Jego jedyną rolą jest składanie sugestii - nie ingestuje, nie odpowiada na pytania, nie zarządza repozytorium. MCP przyjmuje zgłoszenie, zapisuje je do kolejki węzła odbiorcy - i na tym rola agenta sugestii się kończy.
-
-### Jak Działają Sugestie: Kolejka i Pełny Cykl
-
-`suggest` przez MCP to tylko wejście do systemu. Po stronie każdego węzła istnieje trwała **kolejka sugestii** - lekka baza danych (np. SQLite lub pliki JSON w dedykowanym folderze repozytorium), do której trafiają zgłoszenia.
-
-```
-                    ╔══ MCP (interfejs zewnętrzny) ══╗
-                    ║                                ║
-Agent Zewnętrzny ──→║  query  ──→ odpowiedź          ║
-                    ║                                ║
-Agent Zewnętrzny ──→║  suggest ──→ INSERT do kolejki ║
-                    ║                                ║
-                    ╚════════════════════════════════╝
-                                     │
-                              [kolejka: SQLite]
-                                     │
-                    ╔══ Agent Węzła (operacja wewnętrzna) ══╗
-                    ║                                       ║
-                    ║  [cykliczny przegląd kolejki]         ║
-                    ║          │                            ║
-                    ║    oceń sugestię                      ║
-                    ║     ┌────┴────┐                       ║
-                    ║  akceptuj  odrzuć                     ║
-                    ║     │         │                       ║
-                    ║  git commit  UPDATE rejected           ║
-                    ║  (branch:                             ║
-                    ║  suggestions/)                        ║
-                    ║     │                                 ║
-                    ║  PR → przegląd człowieka              ║
-                    ║     │                                 ║
-                    ║  merge → main                         ║
-                    ╚═══════════════════════════════════════╝
-```
-
-**Kolejka sugestii** przechowuje dla każdego zgłoszenia:
-- źródło (który agent / który zespół złożył sugestię)
-- treść (proponowana zmiana, typ: `add` / `edit` / `flag-outdated`)
-- timestamp i status (`pending` / `accepted` / `rejected`)
-- opcjonalne uzasadnienie od składającego
-
-Sugestie od zewnętrznych agentów **nigdy nie trafiają bezpośrednio do wiki ani do `main`** - MCP je tylko przyjmuje. Przetworzenie należy wyłącznie do agenta właściciela węzła.
-
-### Pięć Operacji Węzła
-
-MCP to interfejs - nie logika. Kompletny węzeł Shared Second Brain ma pięć trybów działania, z których tylko dwa są wywoływane przez MCP:
-
-| Operacja | Wywołuje | Inicjator |
-|----------|----------|-----------|
-| **Ingest** | agent wewnętrznie | człowiek dostarcza źródło |
-| **Query** | **MCP `query`** | zewnętrzny agent lub użytkownik |
-| **Lint** | agent wewnętrznie | cyklicznie / automatycznie |
-| **Wprowadź sugestię** | agent wewnętrznie | cykliczny przegląd kolejki |
-| **Git** | agent wewnętrznie | po każdej zmianie w wiki |
-
-**`suggest` przez MCP** jest tylko bramą wejściową - wywołuje go dedykowany agent sugestii działający po stronie innego węzła, nie żaden mechanizm wewnętrzny. Sam serwer MCP kończy swoją pracę na zapisie zgłoszenia do kolejki; resztą zajmuje się wewnętrzny agent węzła-odbiorcy.
->>>>>>> Stashed changes
 
 ### Architektura sieci
 
 Asystent AI pracownika z Zespołu A może w każdej chwili odczytać (`read`) Second Brain Zespołu B, zaczynając od jego indeksu i podążając za linkami, bez logowania do innego systemu, zmiany narzędzia czy szukania właściwej osoby do kontaktu. Wiedza staje się dostępna programatycznie, przez standardowy interfejs, a synteza odpowiedzi z przeczytanych stron należy do zapytującego agenta.
 
-<<<<<<< Updated upstream
 ### Hierarchia Węzłów: Zespołowy i Ogólnofirmowy
 
 Sieć Second Brainów nie musi być płaska. Oprócz węzłów zespołowych może istnieć węzeł **ogólnofirmowy** - Second Brain z wiedzą wspólną dla całej organizacji: polityki, decyzje cross-team, kultura, procesy ogólne. Działa na tych samych zasadach (MCP, `read`/`suggest`), tylko semantycznie nadrzędny, nie centralny technicznie. To wciąż jeden z węzłów sieci, a nie wyjątek architektoniczny.
 
 Typowy wzorzec użycia to **eskalacja**: agent zespołu najpierw przegląda własny, lokalny Second Brain. Gdy brakuje w nim wiedzy o danym temacie, agent sam decyduje o eskalacji i woła `read` na węźle ogólnofirmowym, zaczynając od jego indeksu. Nie wymaga to nowego mechanizmu. To ten sam protokół zastosowany **wertykalnie** (zespół → firma), a nie tylko **horyzontalnie** (zespół A → zespół B).
-=======
-Asystent AI pracownika z Zespołu A może w każdej chwili zapytać Second Brain Zespołu B - bez konieczności logowania do innego systemu, zmiany narzędzia, czy szukania właściwej osoby do kontaktu. Wiedza staje się dostępna programatycznie, przez standardowy interfejs.
->>>>>>> Stashed changes
 
 ### Dlaczego MCP jest właściwym wyborem
 
 MCP rozwiązuje problem **M×N integracji**: bez standardowego protokołu połączenie M systemów wiedzy z N asystentami AI wymaga M×N osobnych konektorów. MCP redukuje to do M+N implementacji.
 
-<<<<<<< Updated upstream
 Najważniejsze cechy MCP dla tego przypadku:
 - **Niezależność od dostawcy** - działa z Claude, GPT, Gemini i dowolnym agentem wspierającym protokół
 - **Lokalnie lub zdalnie** - serwery mogą działać lokalnie w infrastrukturze zespołu, dane nie opuszczają kontrolowanego środowiska
@@ -473,13 +231,6 @@ Najważniejsze cechy MCP dla tego przypadku:
 - **Oszczędność tokenów dzięki indeksowi** - zapytujący agent nie wczytuje całej wiki. Najpierw czyta indeks, po linkach namierza tylko strony faktycznie potrzebne do odpowiedzi i odczytuje (`read`) wyłącznie je. Koszt kontekstu rośnie z trafnością zapytania, nie z rozmiarem całego węzła
 - **Wdrażanie etapowe** - sieć nie wymaga wdrożenia od razu we wszystkich zespołach. Pierwszy węzeł MCP działa samodzielnie, kolejne dołączają jeden po drugim bez przebudowy istniejących. Architektura rośnie krok po kroku, tak jak sama wiki (sekcja 5)
 - **Działanie z modelami lokalnymi** - MCP nie wymaga konkretnego dostawcy LLM. Serwer i agent mogą działać w pełni na modelach hostowanych lokalnie, co pozwala utrzymać wiedzę wrażliwą w infrastrukturze zespołu bez wysyłania jej do zewnętrznego API
-=======
-Kluczowe właściwości MCP dla tego use case'u:
-- **Vendor-neutral**: działa z Claude, GPT, Gemini i dowolnym agentem wspierającym protokół
-- **Lokalne lub zdalne**: serwery mogą działać lokalnie w infrastrukturze zespołu, dane nie opuszczają kontrolowanego środowiska
-- **Explicit consent**: każdy dostęp wymaga autoryzacji, model bezpieczeństwa jest wbudowany
-- **Trzy prymitywy**: Tools (operacje), Resources (dane), Prompts (szablony) - wszystkie potrzebne dla query/suggestion
->>>>>>> Stashed changes
 
 ---
 
@@ -498,11 +249,7 @@ Nie ma centralnej bazy danych do migracji. Nie ma centralnego administratora do 
 
 Tradycyjne wiki-systemy mają fundamentalny problem skalowalności: koszt utrzymania rośnie liniowo z rozmiarem organizacji, ale nikt nie ma budżetu i motywacji, żeby ten koszt ponosić. Dokumentacja gnije.
 
-<<<<<<< Updated upstream
 W modelu Shared Second Brain koszt utrzymania ponosi AI, nie ludzie. Agent automatycznie:
-=======
-W modelu Shared Second Brain koszt utrzymania ponosi AI - nie ludzie. Agent automatycznie:
->>>>>>> Stashed changes
 - Ingestuje nowe materiały i aktualizuje odpowiednie strony wiki
 - Wykrywa sprzeczności między nową informacją a istniejącą wiedzą
 - Flaguje nieaktualne wpisy
@@ -516,29 +263,17 @@ Scentralizowane systemy wiedzy mają single point of failure. Gdy centralna baza
 
 ---
 
-<<<<<<< Updated upstream
 ## 6. Sygnał z Rynku: Google Open Knowledge Format (OKF)
 
 ### Kontekst
 
 12 czerwca 2026 roku Google Cloud opublikowało specyfikację **Open Knowledge Format (OKF)**, otwarty, niezależny od dostawcy standard reprezentowania wiedzy organizacyjnej.
-=======
-## 7. Formalizacja: Google Open Knowledge Format (OKF)
-
-### Kontekst
-
-12 czerwca 2026 roku Google Cloud opublikowało specyfikację **Open Knowledge Format (OKF)** - otwartego, vendor-neutral standardu reprezentowania wiedzy organizacyjnej.
->>>>>>> Stashed changes
 
 Timing jest znaczący - dwa miesiące po tym, jak LLM Wiki Karpathy'ego zebrała 16 milionów wyświetleń. To nie przypadek. To sygnał, że temat skuratorowanej, czytelnej dla agentów wiedzy organizacyjnej właśnie wchodzi do mainstreamu. Przemysł AI krystalizuje zbieżne koncepcje w proponowane standardy.
 
 ### Czym jest OKF
 
-<<<<<<< Updated upstream
 OKF to specyfikacja katalogu plików markdown z YAML frontmatter. Propozycja wspólnej warstwy poniżej wszystkich narzędzi, którą agenci AI z dowolnego dostawcy mogą czytać, pisać i konsumować.
-=======
-OKF to specyfikacja katalogu plików markdown z YAML frontmatter. Propozycja "lingua franca" - wspólnej warstwy poniżej wszystkich narzędzi, którą agenci AI z dowolnego dostawcy mogą czytać, pisać i konsumować.
->>>>>>> Stashed changes
 
 **Problem, który OKF rozwiązuje**: każdy dostawca AI (Notion AI, Confluence AI, Glean) ma własny format katalogowania wiedzy, zamykając ją w ekosystemie narzędzia. Przeniesienie wiedzy między produktami wymaga proprietarnych integracji.
 
@@ -558,21 +293,12 @@ standardowych linków markdown - rodzaj relacji
 wynika z kontekstu, nie z metadanych.
 ```
 
-<<<<<<< Updated upstream
 **Typy konceptów**: dataset, metric, API, runbook, playbook, policy, person, team, decision i dowolne inne.
 
 **Filozofia projektowania**:
 - Oddziela "kto pisze" od "kto czyta". Dowolne narzędzie może pisać OKF, dowolny agent może go czytać
 - Żadna chmura, baza danych, dostawca modeli ani framework nie są wymagane
 - W przeciwieństwie do RAG, OKF to *skuratorowana, stabilna warstwa wiedzy*, którą agenty ładują bezpośrednio do kontekstu
-=======
-**Typy konceptów**: dataset, metric, API, runbook, playbook, policy, person, team, decision - i dowolne inne.
-
-**Filozofia projektowania**:
-- Oddziela "kto pisze" od "kto czyta" - dowolne narzędzie może pisać OKF; dowolny agent może go czytać
-- Żadna chmura, baza danych, dostawca modeli, ani framework nie są wymagane
-- W przeciwieństwie do RAG - OKF to *skurowany, stabilny layer wiedzy*, który agenty ładują bezpośrednio do kontekstu
->>>>>>> Stashed changes
 
 ### OKF jako Druga Droga Rozwoju Struktury Danych
 
@@ -606,15 +332,10 @@ Te elementy razem pokazują, że pętla się zamyka:
 
 ---
 
-<<<<<<< Updated upstream
 ## 7. Use Case'y
-=======
-## 8. Wyzwania i Otwarte Pytania
->>>>>>> Stashed changes
 
 ### Łatwe wdrożenie nowej osoby do projektu
 
-<<<<<<< Updated upstream
 Nowy pracownik, albo ty sam dołączając do nieznanego wcześniej projektu, nie musi przechodzić przez onboarding rozsiany po Slacku, Google Drive i głowach innych ludzi. Otwiera indeks Second Brainu zespołu albo projektu, podąża za linkami do kluczowych decyzji, architektury, runbooków i kontekstu, i ma w kilka minut to, co normalnie zajmuje tygodnie pytania ludzi i grzebania w rozproszonych narzędziach. Agent może przeprowadzić go po tej wiki tak samo, jak nawiguje po niej samodzielnie.
 
 ### Szybkie przeskakiwanie między projektami
@@ -640,9 +361,6 @@ Wiki to zwykłe pliki markdown z linkami `[[...]]`, czyli natywny format Obsidia
 ### Jakość wiedzy i halucynacje
 
 Agent AI ingestujący materiały może wprowadzić błędy lub uprościć niuanse. Mechanizm sugestii (`suggestion`) częściowo adresuje ten problem - zapisywanie jest propozycją, a nie faktem - ale dla krytycznej wiedzy potrzebny jest proces weryfikacji przez ludzi.
-=======
-Agent AI ingestujący materiały może wprowadzić błędy lub uprościć niuanse. Mechanizm sugestii (`suggestion`) częściowo adresuje ten problem - zapisywanie jest propozycją, a nie faktem - ale potrzebny jest proces weryfikacji przez ludzi dla krytycznej wiedzy.
->>>>>>> Stashed changes
 
 ### Prawa dostępu i bezpieczeństwo
 
@@ -665,31 +383,19 @@ Shared Second Brain to architektura odpowiadająca na fundamentalny problem duż
 Proponowane podejście łączy pięć elementów w spójny system:
 
 1. **Second Brain** (Forte) - filozofia: wiedza musi być zewnętrzna, ustrukturyzowana i utrzymywana
-<<<<<<< Updated upstream
 2. **LLM Wiki** (Karpathy) - architektura: AI kompiluje wiedzę z surowych materiałów w skuratorowaną wiki, która kumuluje się w czasie
 3. **Git + repozytorium** - infrastruktura: agent commituje samodzielnie, branche i worktrees umożliwiają równoległą pracę wieloosobową i wieloagentową, pull requesty weryfikują wiedzę przed wejściem do `main`
 4. **MCP** (Anthropic) - protokół: standardowy interfejs read/suggestion łączący węzły wiedzy z agentami, z możliwością eskalacji wertykalnej do węzła ogólnofirmowego
 5. **OKF** (Google) - sygnał i druga droga: niezależna od dostawcy specyfikacja metadanych wiedzy, która pokazuje, że temat wchodzi do mainstreamu, i daje ścieżkę formalizacji, gdy zespoły będą gotowe
-=======
-2. **LLM Wiki** (Karpathy) - architektura: AI kompiluje wiedzę z surowych materiałów w skurowaną wiki, która kumuluje się w czasie
-3. **Git + repozytorium** - infrastruktura: agent commituje samodzielnie, branche i worktrees umożliwiają równoległą pracę wieloosobową i wieloagentową, pull requesty weryfikują wiedzę przed wejściem do `main`
-4. **MCP** (Anthropic) - protokół: standardowy interfejs query/suggestion łączący węzły wiedzy z agentami
-5. **OKF** (Google) - format: vendor-neutral specyfikacja przechowywania wiedzy, czytelna przez dowolny agent
->>>>>>> Stashed changes
 
 Każdy zespół jako autonomiczny węzeł. Każdy węzeł z własnym Second Brainem w repozytorium. Każdy Second Brain dostępny przez MCP. Format plików zaczyna od konwencji LLM Wiki, OKF pozostaje otwartą opcją ewolucji struktury danych.
 
-<<<<<<< Updated upstream
 Wynik: organizacja, w której wiedza każdego zespołu jest programatycznie dostępna dla każdego innego, bez silosów, bez centralnego wąskiego gardła, bez dokumentacji, która gnije.
-=======
-Wynik: organizacja, w której wiedza każdego zespołu jest programatycznie dostępna dla każdego innego - bez silosów, bez centralnego wąskiego gardła, bez dokumentacji, która gnije.
->>>>>>> Stashed changes
 
 ---
 
 ## Źródła
 
-<<<<<<< Updated upstream
 Statystyki we wstępie - pierwotne raporty i badania (zweryfikowane 2026-06-16):
 
 ¹ Narayana Murty, Dadlani & Das - *How Much Time and Energy Do We Waste Toggling Between Applications?* (Harvard Business Review, sierpień 2022, dane z badania Soroco) - https://hbr.org/2022/08/how-much-time-and-energy-do-we-waste-toggling-between-applications
@@ -701,13 +407,6 @@ Statystyki we wstępie - pierwotne raporty i badania (zweryfikowane 2026-06-16):
 ⁴ McKinsey Global Institute - *The Social Economy* (2012, szacunek potencjalnej redukcji czasu wyszukiwania) - https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy
 
 ⁵ Panopto - *Workplace Knowledge and Productivity Report* (2018, badanie 1 001 pracowników USA, metodologia w komunikacie prasowym) - https://www.prnewswire.com/news-releases/inefficient-knowledge-sharing-costs-large-businesses-47-million-per-year-300681971.html
-=======
-¹ Qatalog & Cornell University (2022) - *Workgeist Report* - link do weryfikacji: https://qatalog.com/workgeist-report/ *(wymaga sprawdzenia dostępności)*
-
-² Glean - *Top Knowledge Management Challenges* - https://www.glean.com/perspectives/top-knowledge-management-challenges
-
-³ KS Agents - *Strategic Analysis: Knowledge Loss & Employee Turnover* - https://ks-agents.com/blog/strategic-analysis-knowledge-loss-employee-turnover
->>>>>>> Stashed changes
 
 Dodatkowe źródła:
 - Sinequa / BusinessWire (2022) - *Over Two-Thirds of IT Leaders Concerned by Organizational Knowledge Loss* - https://www.businesswire.com/news/home/20220802006132/en/Sinequa-Finds-Over-Two-Thirds-of-IT-Leaders-Are-Concerned-by-Organizational-Knowledge-Loss-From-Employee-Turnover
